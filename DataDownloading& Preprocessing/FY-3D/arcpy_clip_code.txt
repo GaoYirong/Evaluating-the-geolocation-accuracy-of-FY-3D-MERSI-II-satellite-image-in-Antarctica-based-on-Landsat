@@ -1,0 +1,22 @@
+import arcpy
+from arcpy.sa import *
+import os
+# Input and Output Paths
+tif_file_path = "yourpath/github/Data Downloading and Preprocessing/FY-3D/test_data/tif"
+clip_file_path = "yourpath/github/Data Downloading and Preprocessing/FY-3D/test_data/tif_roi_clip"
+mask_tif_file = "yourpath/github/Data Downloading and Preprocessing/FY-3D/test_data/amery_fy_roi.tif"
+
+# Create output folder
+if not os.path.exists(clip_file_path):
+    os.makedirs(clip_file_path)
+
+# Set environment parameters
+arcpy.env.workspace = tif_file_path
+arcpy.env.extent = mask_tif_file  
+arcpy.env.snapRaster = mask_tif_file  
+tif_file_name = arcpy.ListRasters("*", "tif")
+for tif_file in tif_file_name:
+    key_name = tif_file.split(".tif")[0] + "_clip.tif"
+    clip_file_name = os.path.join(clip_file_path, key_name)
+    clip_file = ExtractByMask(tif_file, mask_tif_file)
+    clip_file.save(clip_file_name)
