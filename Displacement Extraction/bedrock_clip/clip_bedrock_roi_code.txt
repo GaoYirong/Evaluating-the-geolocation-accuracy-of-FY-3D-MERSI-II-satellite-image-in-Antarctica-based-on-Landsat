@@ -1,0 +1,25 @@
+import arcpy
+from arcpy.sa import *
+import os
+
+tif_file_path = "yourpath/displacement/COSI_Corr_output"
+clip_file_path = "yourpath/displacement/bedrock_clip/clip_bedrock_roi"
+mask_tif_file = "yourpath/displacement/bedrock_clip/bedrock_ro/amery_bedrock_roi.shp"
+
+
+if not os.path.exists(clip_file_path):
+    os.makedirs(clip_file_path)
+
+
+arcpy.env.workspace = tif_file_path
+arcpy.env.extent = mask_tif_file
+
+tif_file_name = arcpy.ListRasters("*", "tif")
+
+for tif_file in tif_file_name:
+    key_name = tif_file.split(".tif")[0] + "_bedrock.tif"
+    clip_file_name = os.path.join(clip_file_path, key_name)
+    
+
+    clip_file = ExtractByMask(tif_file, mask_tif_file)
+    clip_file.save(clip_file_name)
