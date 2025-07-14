@@ -12,7 +12,7 @@
   - [Landsat 8 OLI](#landsat-8-oli-data)  
   - [FY-3D MERSI-II](#fy-3d-mersi-ii-data)  
 - [Displacement Extraction](#displacement-extraction)  
-- [Calculation Of Geolocation Errors](#geolocation-error-calculation)  
+- [Calculation Of Geolocation Errors](#Calculation Of Geolocation Errors)  
 - [Figures](#figures)  
 - [Data Description](#data-description)  
 - [External Resources](#external-resources)  
@@ -58,7 +58,7 @@ This project is organized into three main components:
 
 ---
 
-## Geolocation Error Calculation
+## Calculation Of Geolocation Errors
 
 - Displacement statistics were computed using the script `Calculation Of Geolocation Errors.py`, including:
   - RMSE in x/y direction
