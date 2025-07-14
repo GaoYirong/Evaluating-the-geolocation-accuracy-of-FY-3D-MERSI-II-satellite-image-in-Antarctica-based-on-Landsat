@@ -8,11 +8,11 @@
 ## Table of Contents
 
 - [Project Structure](#project-structure)  
-- [DataDownloading&Preprocessing](#DataDownloading&Preprocessing)  
+- [DataDownloading&Preprocessing](#datadownloadingpreprocessing)  
   - [Landsat 8 OLI](#landsat-8-oli-data)  
   - [FY-3D MERSI-II](#fy-3d-mersi-ii-data)  
 - [Displacement Extraction](#displacement-extraction)  
-- [Calculation Of Geolocation Errors](#Calculation Of Geolocation Errors)  
+- [Calculation Of Geolocation Errors](#calculation-of-geolocation-errors)  
 - [Figures](#figures)  
 - [Data Description](#data-description)  
 - [External Resources](#external-resources)  
