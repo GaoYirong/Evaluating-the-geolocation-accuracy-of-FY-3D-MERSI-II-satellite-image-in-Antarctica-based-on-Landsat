@@ -68,8 +68,8 @@ This project is organized into three main components:
   - Using GLAFT tool visualization [GLAFT Toolkit](https://github.com/ncu-cryosensing/GLAFT).
   - 
 **Reference**:  
-Zheng, W., et al. (2022). *Glacier geometry and flow speed determine how Arctic marine-terminating glaciers respond to lubricated beds*. The Cryosphere, 16, 1431–1445.  
-[https://doi.org/10.5194/tc-16-1431-2022](https://doi.org/10.5194/tc-16-1431-2022)
+Zheng, W., et al. (2022). *GLAcier Feature Tracking testkit (GLAFT): a statistically and physically based framework for evaluating glacier velocity products derived from optical satellite image feature tracking*. TC, 17, 4063–4078, 2023.  
+[https://doi.org/10.5194/tc-17-4063-2023](https://doi.org/10.5194/tc-17-4063-2023)
 
 ---
 
