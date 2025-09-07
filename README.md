@@ -24,18 +24,18 @@
 
 This project is organized into three main components:
 
-1. **DataDownloading&Preprocessing**  
-2. **DisplacementExtraction**  
+1. **Data Downloading&Preprocessing**  
+2. **Displacement Extraction**  
 3. **Calculation Of Geolocation Errors**
 4. **Figures**
 5. **Data**
 ---
-## Data Downloading and Preprocessing
+## Data Downloading&Preprocessing
 
 ### Landsat 8 OLI Data
 
 - Landsat 8 OLI (TOA Band 4) scenes were downloaded and composited using [Google Earth Engine (GEE)](https://earthengine.google.com/).
-- The script used for compositing is included in [`GEE_code.txt`](./DataDownloading_Preprocessing/GEE_code.txt).
+- The script used for compositing is included in [`GEE_code.txt`](./DataDownloading&Preprocessing/GEE_code.txt).
 
 ### FY-3D MERSI-II Data
 
