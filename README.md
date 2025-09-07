@@ -22,7 +22,7 @@
 
 ## Project Structure
 
-This project is organized into three main components:
+This project is organized into five  main components:
 
 1. **Data Downloading&Preprocessing**  
 2. **Displacement Extraction**  
