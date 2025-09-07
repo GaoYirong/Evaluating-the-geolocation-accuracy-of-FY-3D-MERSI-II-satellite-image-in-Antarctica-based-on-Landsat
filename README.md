@@ -34,16 +34,16 @@ This project is organized into three main components:
 
 ### Landsat 8 OLI Data
 
-- Landsat 8 OLI (TOA Band 4) scenes were downloaded and composited using [Google Earth Engine (GEE)](https://earthengine.google.com/).
+- Landsat 8 OLI (TOA Band 4) scenes are downloaded and composited using [Google Earth Engine (GEE)](https://earthengine.google.com/).
 - The script used for compositing is included in [`GEE_code.txt`](https://github.com/GaoYirong/Evaluating-the-geolocation-accuracy-of-FY-3D-MERSI-II-satellite-image-in-Antarctica-based-on-Landsat/tree/master/DataDownloading%26%20Preprocessing/Landsat8).
 
 ### FY-3D MERSI-II Data
 
-- FY-3D MERSI-II images were obtained from the [the National Satellite Meteorological Center(NSMC)](https://satellite.nsmc.org.cn/PortalSite/Data/Satellite.aspx?currentculture=zh-CN).
+- FY-3D MERSI-II images are obtained from the [the National Satellite Meteorological Center(NSMC)](https://satellite.nsmc.org.cn/PortalSite/Data/Satellite.aspx?currentculture=zh-CN).
 - Preprocessing steps:
   - Radiometric calibration and band extraction via IDL:[`FY_3D_getband4.pro`](https://github.com/GaoYirong/Evaluating-the-geolocation-accuracy-of-FY-3D-MERSI-II-satellite-image-in-Antarctica-based-on-Landsat/tree/master/DataDownloading%26%20Preprocessing/FY-3D).
   - Conversion from `.dat` to `.tif`: [`dat_to_tif.pro`](https://github.com/GaoYirong/Evaluating-the-geolocation-accuracy-of-FY-3D-MERSI-II-satellite-image-in-Antarctica-based-on-Landsat/tree/master/DataDownloading%26%20Preprocessing/FY-3D).
-  - Projection and spatial clipping with ArcPy: [`arcpy_clip_code.txt` ](https://github.com/GaoYirong/Evaluating-the-geolocation-accuracy-of-FY-3D-MERSI-II-satellite-image-in-Antarctica-based-on-Landsat/tree/master/DataDownloading%26%20Preprocessing/FY-3D)., to match the Landsat 8 reference imagery.
+  - Projection and spatial clipping with ArcPy: [`arcpy_clip_code.txt` ](https://github.com/GaoYirong/Evaluating-the-geolocation-accuracy-of-FY-3D-MERSI-II-satellite-image-in-Antarctica-based-on-Landsat/tree/master/DataDownloading%26%20Preprocessing/FY-3D), to match the Landsat 8 reference imagery.
 
 > The clipped extent should match or slightly fall within the corresponding Landsat 8 scene.
 
@@ -51,16 +51,16 @@ This project is organized into three main components:
 
 ## Displacement Extraction
 
-- Displacement fields were generated using the [COSI-Corr](http://www.tectonics.caltech.edu/slip_history/spot_coseis/) software package.
-- Under the assumption that displacement over stable bedrock reflects geolocation error, only displacements within bedrock regions were used.
-- Bedrock masks were obtained from the [BAS Antarctic Rock Outcrop Dataset](https://data.bas.ac.uk/items/178ec50d-1ffb-42a4-a4a3-1145419da2bb/).
-- Scripts used for region clipping and masking are provided in `clip_bedrock_roi_code.txt`.
+- Displacement fields are generated using the [COSI-Corr](http://www.tectonics.caltech.edu/slip_history/spot_coseis/) software package.
+- Under the assumption that displacement over stable bedrock reflects geolocation error, only displacements within bedrock regions are used.
+- Bedrock masks are obtained from the [BAS Antarctic Rock Outcrop Dataset](https://data.bas.ac.uk/items/178ec50d-1ffb-42a4-a4a3-1145419da2bb/).
+- Scripts used for region clipping and masking are provided in[`clip_bedrock_roi_code.txt`](https://github.com/GaoYirong/Evaluating-the-geolocation-accuracy-of-FY-3D-MERSI-II-satellite-image-in-Antarctica-based-on-Landsat/tree/master/Displacement%20Extraction/bedrock_clip).
 
 ---
 
 ## Calculation Of Geolocation Errors
 
-- Displacement statistics were computed using the script `Calculation Of Geolocation Errors.py`, including:
+- Displacement statistics are computed using the script `Calculation Of Geolocation Errors.py`, including:
   - RMSE in x/y direction
   - Mean absolute bias (MAB)
   - Temporal and spatial distribution metrics
@@ -114,7 +114,7 @@ The `/Data` folder includes all processed datasets used in the analysis:
 
 ## Notes
 
-- Scripts were written in **Python**, **IDL**, and **ArcPy**, and partially executed in **ENVI**.
+- Scripts are written in **Python**, **IDL**, and **ArcPy**, and partially executed in **ENVI**.
 - Python version ≥ 3.8 is recommended.
 - ENVI version ≥ 5.3 is required for image display and manual checks.
 - Access to Google Earth Engine requires registration.
