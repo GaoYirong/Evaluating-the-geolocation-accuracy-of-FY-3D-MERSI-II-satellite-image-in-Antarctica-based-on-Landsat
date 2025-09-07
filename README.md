@@ -14,7 +14,7 @@
 - [Displacement Extraction](#displacement-extraction)  
 - [Calculation Of Geolocation Errors](#calculation-of-geolocation-errors)  
 - [Figures](#figures)  
-- [Data Description](#data-description)  
+- [Data](#data)  
 - [External Resources](#external-resources)  
 - [Notes](#notes)  
 - [Contact](#contact)  
@@ -66,10 +66,9 @@ This project is organized into three main components:
   - Mann-Kendall trend analysis
   - Heading angle calculations(along&cross)
   - Using GLAFT tool visualization [GLAFT Toolkit](https://github.com/ncu-cryosensing/GLAFT) software package and coding[`GLAFT`](https://github.com/GaoYirong/Evaluating-the-geolocation-accuracy-of-FY-3D-MERSI-II-satellite-image-in-Antarctica-based-on-Landsat/tree/master/Calculation%20Of%20Geolocation%20Errors/GLAFT)
-  - 
-**Reference**:  
-Zheng, W., et al. (2022). *GLAcier Feature Tracking testkit (GLAFT): a statistically and physically based framework for evaluating glacier velocity products derived from optical satellite image feature tracking*. TC, 17, 4063–4078, 2023.  
-[https://doi.org/10.5194/tc-17-4063-2023](https://doi.org/10.5194/tc-17-4063-2023)
+    
+**Reference**: 
+Zheng, Whyjay, et al. "GLAcier Feature Tracking testkit (GLAFT): a statistically and physically based framework for evaluating glacier velocity products derived from optical satellite image feature tracking." The Cryosphere 17.9 (2023): 4063-4078.[https://doi.org/10.5194/tc-17-4063-2023](https://doi.org/10.5194/tc-17-4063-2023)
 
 ---
 
@@ -84,11 +83,11 @@ This folder contains all the figures included in the paper, and the scripts used
 
 ---
 
-## Data Description
+## Data
 
 The `/Data` folder includes all processed datasets used in the analysis:
 
-- Preprocessed **FY-3D** and **Landsat 8** images for four study regions:  
+- Preprocessed(ata Downloading&Preprocessing) **FY-3D** and **Landsat 8** images for four study regions:  
   - *Amery Ice Shelf*  
   - *Antarctic Peninsula*  
   - *Queen Maud Land*  
@@ -104,7 +103,7 @@ The `/Data` folder includes all processed datasets used in the analysis:
 
 | Description | Link |
 |------------|------|
-| FY-3D MERSI-II Data Source | [NSMC Satellite Data Center](https://satellite.nsmc.org.cn/PortalSite/Data/Satellite.aspx?currentculture=zh-CN) |
+| FY-3D MERSI-II Data Source | [the National Satellite Meteorological Center(NSMC)](https://satellite.nsmc.org.cn/PortalSite/Data/Satellite.aspx?currentculture=zh-CN) |
 | Landsat 8 Data | [Google Earth Engine](https://earthengine.google.com/) |
 | Antarctic Rock Outcrop Dataset | [British Antarctic Survey (BAS)](https://data.bas.ac.uk/items/178ec50d-1ffb-42a4-a4a3-1145419da2bb/) |
 | COSI-Corr Software | [Caltech Tectonics Observatory](http://www.tectonics.caltech.edu/slip_history/spot_coseis/) |
@@ -127,4 +126,4 @@ If you have any questions, suggestions, or would like to collaborate, please ope
 
 ---
 
-_Last updated: June 2025_
+_Last updated: September 2025_
