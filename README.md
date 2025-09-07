@@ -35,7 +35,7 @@ This project is organized into three main components:
 ### Landsat 8 OLI Data
 
 - Landsat 8 OLI (TOA Band 4) scenes were downloaded and composited using [Google Earth Engine (GEE)](https://earthengine.google.com/).
-- The script used for compositing is included in [`GEE_code.txt`](./DataDownloading&Preprocessing/GEE_code.txt).
+- The script used for compositing is included in [`GEE_code.txt`](https://github.com/GaoYirong/Evaluating-the-geolocation-accuracy-of-FY-3D-MERSI-II-satellite-image-in-Antarctica-based-on-Landsat/tree/master/DataDownloading%26%20Preprocessing/Landsat8).
 
 ### FY-3D MERSI-II Data
 
