@@ -39,11 +39,11 @@ This project is organized into three main components:
 
 ### FY-3D MERSI-II Data
 
-- FY-3D MERSI-II images were obtained from the [FY Satellite Remote Sensing Data Service](https://satellite.nsmc.org.cn/PortalSite/Data/Satellite.aspx?currentculture=zh-CN).
+- FY-3D MERSI-II images were obtained from the [the National Satellite Meteorological Center(NSMC)](https://satellite.nsmc.org.cn/PortalSite/Data/Satellite.aspx?currentculture=zh-CN).
 - Preprocessing steps:
-  - Radiometric calibration and band extraction via IDL: `FY_3D_getband4.pro`
-  - Conversion from `.dat` to `.tif`: `dat_to_tif.pro`
-  - Projection and spatial clipping with ArcPy: `arcpy_clip_code.txt`, to match the Landsat 8 reference imagery.
+  - Radiometric calibration and band extraction via IDL:[`FY_3D_getband4.pro`](https://github.com/GaoYirong/Evaluating-the-geolocation-accuracy-of-FY-3D-MERSI-II-satellite-image-in-Antarctica-based-on-Landsat/tree/master/DataDownloading%26%20Preprocessing/FY-3D).
+  - Conversion from `.dat` to `.tif`: [`dat_to_tif.pro`](https://github.com/GaoYirong/Evaluating-the-geolocation-accuracy-of-FY-3D-MERSI-II-satellite-image-in-Antarctica-based-on-Landsat/tree/master/DataDownloading%26%20Preprocessing/FY-3D).
+  - Projection and spatial clipping with ArcPy: [`arcpy_clip_code.txt` ](https://github.com/GaoYirong/Evaluating-the-geolocation-accuracy-of-FY-3D-MERSI-II-satellite-image-in-Antarctica-based-on-Landsat/tree/master/DataDownloading%26%20Preprocessing/FY-3D)., to match the Landsat 8 reference imagery.
 
 > The clipped extent should match or slightly fall within the corresponding Landsat 8 scene.
 
