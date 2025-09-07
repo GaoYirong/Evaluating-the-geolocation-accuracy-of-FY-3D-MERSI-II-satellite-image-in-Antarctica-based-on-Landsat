@@ -60,12 +60,12 @@ This project is organized into three main components:
 
 ## Calculation Of Geolocation Errors
 
-- Displacement statistics are computed using the script `Calculation Of Geolocation Errors.py`, including:
+- Displacement statistics are computed using the script[`Calculation Of Geolocation Errors.py`](https://github.com/GaoYirong/Evaluating-the-geolocation-accuracy-of-FY-3D-MERSI-II-satellite-image-in-Antarctica-based-on-Landsat/tree/master/Calculation%20Of%20Geolocation%20Errors), including:
   - RMSE in x/y direction
   - Mean absolute bias (MAB)
-  - Temporal and spatial distribution metrics
-  - Heading angle calculations
-  - Using GLAFT tool visualization [GLAFT Toolkit](https://github.com/ncu-cryosensing/GLAFT).
+  - Mann-Kendall trend analysis
+  - Heading angle calculations(along&cross)
+  - Using GLAFT tool visualization [GLAFT Toolkit](https://github.com/ncu-cryosensing/GLAFT) software package and coding[`GLAFT`](https://github.com/GaoYirong/Evaluating-the-geolocation-accuracy-of-FY-3D-MERSI-II-satellite-image-in-Antarctica-based-on-Landsat/tree/master/Calculation%20Of%20Geolocation%20Errors/GLAFT)
   - 
 **Reference**:  
 Zheng, W., et al. (2022). *GLAcier Feature Tracking testkit (GLAFT): a statistically and physically based framework for evaluating glacier velocity products derived from optical satellite image feature tracking*. TC, 17, 4063–4078, 2023.  
