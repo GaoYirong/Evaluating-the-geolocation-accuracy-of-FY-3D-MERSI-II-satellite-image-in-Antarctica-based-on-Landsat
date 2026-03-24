@@ -1,4 +1,7 @@
-# Evaluating the Geolocation Accuracy of FY-3D MERSI-II Satellite Images in Antarctica Based on Landsat 8-OLI Reference Imagery
+# 🛰️ Evaluating the Geolocation Accuracy of FY-3D MERSI-II Satellite Images in Antarctica Based on Landsat 8-OLI Reference Imagery
+
+📄 **Related Article**:  
+https://doi.org/10.1080/10095020.2026.2642551  
 
 [![Python 3.8+](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
@@ -126,4 +129,4 @@ If you have any questions, suggestions, or would like to collaborate, please ope
 
 ---
 
-_Last updated: September 2025_
+_Last updated: March 24, 2026_
